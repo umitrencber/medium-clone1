@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+    
     
 </head>
 <body>
@@ -21,10 +23,10 @@
     
 
     <!-- nav-bar -->
-    <div class="bg-warning border-bottom-dark py-2 ">
-        <div class="container ">
+    <div class="color sticky border-bottom-dark py-2 fixed-top  ">
+        <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light ">
-              <div class="container-fluid">
+              <div class="container-fluid ">
                 <a class="navbar-brand" href="#">Medium</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -48,7 +50,7 @@
                                  Sign In</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link btn btn-dark text-light rounded-pill px-3 mt-1"
+                            <a class="nav-link btn btn-dark text-light rounded-pill px-3 mt-1 get-started"
                                 style="margin-left: 20px; font-family: 'Roboto Slab', serif; font-size: 14px;">
                                 Get started </a>
                         </li>
@@ -57,20 +59,352 @@
               </div>
             </nav>
         </div>
+        <script>
+            // kaydırınca navbarın renk değiştirmesi js kodu
+            window.addEventListener("scroll", function() {
+                var navbar = document.querySelector(".color");
+                var getStarted = document.querySelector(".get-started");
+                var scrollDistance = window.scrollY;
+
+                if (scrollDistance > 350) {
+                    navbar.style.backgroundColor = "#ffffff"; /* Kaydırıldığında navbar'ın yeni rengi */
+                    getStarted.style.backgroundColor = "green"; /* get starded yeni rengi*/
+                    
+                } else {
+                    navbar.style.backgroundColor = "#ffc107"; /* Navbar'ın orijinal rengi */
+                    getStarted.style.backgroundColor = "rgb(29, 28, 28)";
+                }
+                });
+
+        </script>
     </div>
-    <div class="bg-warning border-bottom-dark py-5 ">
-        <div class="container">
+    <div class="bg-warning border-bottom-dark py-5  ">
+        <div class="container mt-5">
             <div class="row">
                 <div class="col-6">  
-                    <h1 class="display-1 text-wrap mt-5"
-                    style="font-family: 'Roboto Slab', serif; font-weight: 400;"
+                    <h1 class="display-1 text-wrap mt-5 "
+                    style="font-family: 'Roboto Slab', serif; font-weight: 400; "
                     >Stay curious.</h1>
                     <p class="lead mt-3 fw-light fs-5">
                         <strong>Discover stories, thinking, and expertise <br> 
                             from writers on any topic.</strong></p>
                     <button class="btn btn-dark btn-lg rounded-pill mt-3 text-center px-5 ">Start reading </button>
                 </div>
-                <div class="col-6"></div>
+                <div class="col-6 d-flex justify-content-center">
+                    <img class="rounded-circle  opacity-75" src="https://picsum.photos/id/12/360/360" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-12 list-inline">
+                <i class="fa-solid fa-arrow-trend-up list-inline-item "></i>
+                <h6 class="list-inline-item" >Trending on Medium</h6>
+            </div>
+
+            <article class="col-4 mt-2">
+                <div class="row">
+                    <div class="col-1 ">
+                        <h5 class="text-black-50 opacity-50 fs-2 ">01</h5>
+                    </div>
+                    <div class="col-11 px-">
+                        <img class="rounded-circle " src="https://picsum.photos/id/11/25/25" alt="">
+                        <span class="fs-6"></span>
+                        <span class="fw-bold" style="font-size: 13px;">
+                            <small>Guodong (Troy) Zhao<small> in</small> Bootcamp</small></span>
+                        <h6 class="mt-2 fw-bold">
+                            A step-by-step guide to building a chatbot <br>
+                             based on your own documents with GPT
+                        </h6> 
+
+                        <ul class="list-inline small text-muted ">
+                            <li class="list-inline-item small">Mar 11 ·</li>
+                            <li class="list-inline-item small">6 min read</li>
+                            <li class="list-inline-item small">
+                                <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <article class="col-4 mt-2">
+                <div class="row">
+                    <div class="col-1 ">
+                        <h5 class="text-black-50 opacity-50 fs-2 ">01</h5>
+                    </div>
+                    <div class="col-11 px-">
+                        <img class="rounded-circle " src="https://picsum.photos/id/12/25/25" alt="">
+                        <span class="fw-bold" style="font-size: 13px;"><small>Arthur Hayes</small></span>
+                        <h6 class="mt-2 fw-bold">
+                            Kaiseki  
+                        </h6> 
+
+                        <ul class="list-inline small text-muted ">
+                            <li class="list-inline-item small">Mar 18 ·</li>
+                            <li class="list-inline-item small">31 min read</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <article class="col-4 mt-2">
+                <div class="row">
+                    <div class="col-1 ">
+                        <h5 class="text-black-50 opacity-50 fs-2 ">01</h5>
+                    </div>
+                    <div class="col-11 px-">
+                        <img class="rounded-circle " src="https://picsum.photos/id/13/25/25" alt="">
+                        <span class="fw-bold" style="font-size: 13px;"><small>Tom Cooper</small></span>
+                        <h6 class="mt-2 fw-bold">
+                            Ukraine War, 15 March 2023: Standstill
+                        </h6> 
+
+                        <ul class="list-inline small text-muted ">
+                            <li class="list-inline-item small">Mar 15 ·</li>
+                            <li class="list-inline-item small">8 min read</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <article class="col-4 mt-2">
+                <div class="row">
+                    <div class="col-1 ">
+                        <h5 class="text-black-50 opacity-50 fs-2 ">01</h5>
+                    </div>
+                    <div class="col-11 px-">
+                        <img class="rounded-circle " src="https://picsum.photos/id/14/25/25" alt="">
+                        <span class="fw-bold" style="font-size: 14px;">
+                           <small> Kevin Beaumont<small> in</small> DoublePulsar</span></small>
+                        <h6 class=" mt-2 fw-bolder ">
+                            A look at CVE-2023–23415 —a Windows <br>
+                             ICMP vulnerability + mitigations which is
+                        </h6> 
+
+                        <ul class="list-inline small text-muted ">
+                            <li class="list-inline-item small">Mar 15 ·</li>
+                            <li class="list-inline-item small">3 min read</li>
+                            <li class="list-inline-item small">
+                                <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <article class="col-4 mt-2">
+                <div class="row">
+                    <div class="col-1 ">
+                        <h5 class="text-black-50 opacity-50 fs-2 ">01</h5>
+                    </div>
+                    <div class="col-11 px-">
+                        <img class="rounded-circle " src="https://picsum.photos/id/16/25/25" alt="">
+
+                        <span class="fw-bold" style="font-size: 14px;">
+                            <small>Mohamed Aboelez<small> in</small> Level Up Coding</small>
+                        </span>
+                        <h6 class="mt-2 fw-bold">
+                            Demotivating a (Skilled) Programmer
+                        </h6> 
+
+                        <ul class="list-inline small text-muted ">
+                            <li class="list-inline-item small">Mar 8 ·</li>
+                            <li class="list-inline-item small">4 min read</li>
+                            <li class="list-inline-item small">
+                                <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <article class="col-4 mt-2">
+                <div class="row">
+                    <div class="col-1 ">
+                        <h5 class="text-black-50 opacity-50 fs-2 ">01</h5>
+                    </div>
+                    <div class="col-11 px-">
+                        <img class="rounded-circle " src="https://picsum.photos/id/11/25/25" alt="">
+                        <span class="fw-bold" style="font-size: 14px;">
+                            <small>William Spivey<small> in</small> ZORA</small>
+                        </span>
+                        <h6 class="mt-2 fw-bold">
+                            Is Ron DeSantis Trying To Cancel Black <br>
+                             Fraternities And Sororities?
+                        </h6> 
+
+                        <ul class="list-inline small text-muted ">
+                            <li class="list-inline-item small">Mar 14 ·</li>
+                            <li class="list-inline-item small">5 min read</li>
+                            <li class="list-inline-item small">
+                                <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            
+
+        </div>
+
+        
+        
+        
+    </div>  <!-- trending on medium part end-->
+    <hr>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-7 px-5">
+                <article class="row">   
+                    <div class="col-8">
+                        <img class="rounded-circle" src="https://picsum.photos/id/30/25/25" alt="">
+                        <span class="fw-bold fs-14">Medium Staff <small>in</small>  3 Min Read</span>
+                        <h4 class="mt-2 fw-and-ff">What We’re Reading: We asked for your stories <br>
+                            and you delivered
+                        </h4>
+                        <p class="ff">
+                            From Women’s History Month to pandemic retrospectives, here’s a <br>
+                             look at what you’ve shared on Medium lately
+                        </p>
+                        <ul class="list-inline ">
+                            <li class="list-inline-item small">Mar 17·</li>
+                            <li class="list-inline-item small">4 min read ·</li>
+                            <li class="list-inline-item small ">
+                                <button type="button" class="btn btn-secondary-special rounded-pill ">Medium</button>
+                            </li>
+                            <li class="list-inline-item offset-7">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </li>
+                          </ul>
+                    </div>
+                    <div class="col-4  ">
+                        <img class="w-100" src="https://picsum.photos/id/37/200/134" alt="">
+                    </div> 
+                </article>
+                <article class="row">
+                    <div class="col-8">
+                        <img class="rounded-circle" src="https://picsum.photos/id/31/25/25" alt="">
+                        <span class="fw-bold fs-14">Anna Burgess Yang</span>
+                        <h4 class="mt-2 fw-and-ff">What’s Going On? The Silicon Valley Bank<br>
+                            Collapse vs. the 2008 Financial Crisis
+                        </h4>
+                        <p class="ff">
+                            Confused? Here’s a simple (yet thorough!) explainer.
+                        </p>
+                        <ul class="list-inline ">
+                            <li class="list-inline-item small">Mar 12·</li>
+                            <li class="list-inline-item small">16 min read ·</li>
+                            <li class="list-inline-item small ">
+                                <button type="button" class="btn btn-secondary-special rounded-pill ">Silicon Valley Bank</button>
+                            </li>
+                            <li class="list-inline-item offset-7">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </li>
+                          </ul>
+                    </div>
+                    <div class="col-4  ">
+                        <img class="w-100" src="https://picsum.photos/id/77/200/134" alt="">
+                    </div> 
+                </article>
+                <article class="row">
+                    <div class="col-8">
+                        <img class="rounded-circle" src="https://picsum.photos/id/40/25/25" alt="">
+                        <span class="fw-bold fs-14">Giovanni Malloy<small> in </small>Towards Data Science</span>
+                        <h4 class="mt-2 fw-and-ff">College Basketball’s NET Rankings Explained
+                        </h4>
+                        <p class="ff">
+                            How data science influences March Madness
+                        </p>
+                        <ul class="list-inline ">
+                            <li class="list-inline-item small">Mar 8·</li>
+                            <li class="list-inline-item small">12 min read ·</li>
+                            <li class="list-inline-item small ">
+                                <button type="button" class="btn btn-secondary-special rounded-pill ">Data Science</button>
+                            </li>
+                            <li class="list-inline-item offset-7">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </li>
+                          </ul>
+                    </div>
+                    <div class="col-4  ">
+                        <img class="w-100" src="https://picsum.photos/id/88/200/134" alt="">
+                    </div> 
+                </article>
+              
+            </div>
+            <div class="col-5 px-5">
+                <div class="row  ">
+                    <h4 class="col-12 fs-6 mb-4 ">Discover more of what matters to you</h4>
+                    <ul class="list-inline mb-4 ">
+                        <li class="list-inline-item ">
+                            <button type="button" class="btn btn-light border">Programming</button>
+                        </li>
+                        <li class="list-inline-item">
+                            <button type="button" class="btn btn-light border">Data Science</button>
+                        </li>
+                        <li class="list-inline-item">
+                            <button type="button" class="btn btn-light border">Techonology</button>
+                        </li>
+                        <li class="list-inline-item">
+                            <button type="button" class="btn btn-light border">Self Improvement</button>
+                        </li>
+                        <li class="list-inline-item ">
+                            <button type="button" class="btn btn-light border">Writing</button>
+                        </li>
+                        <li class="list-inline-item">
+                            <button type="button" class="btn btn-light border">Realationships</button>
+                        </li>
+                        <li class="list-inline-item">
+                            <button type="button" class="btn btn-light border">Machine Learning</button>
+                        </li>
+                        <li class="list-inline-item">
+                            <button type="button" class="btn btn-light border">Producutiy</button>
+                        </li>
+                        <li class="list-inline-item">
+                            <button type="button" class="btn btn-light border">Politics</button>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul class="list-inline ">
+                        <li class="list-inline-item me-3 mb-3 ">
+                            <a href="#" class="pe-auto text-dark text-decoration-none fs-6 opacity-75 ">Help</a>
+                        </li>
+                        <li class="list-inline-item me-3 mb-3 ">
+                            <a href="#" class="pe-auto text-dark text-decoration-none fs-6 opacity-75">Status</a>
+                        </li>
+                        <li class="list-inline-item me-3 mb-3 ">
+                            <a href="#" class="pe-auto text-dark text-decoration-none fs-6 opacity-75">Writers</a>
+                        </li>
+                        <li class="list-inline-item me-3 mb-3 ">
+                            <a href="#" class="pe-auto text-dark text-decoration-none fs-6 opacity-75">Blog</a>
+                        </li>
+                        <li class="list-inline-item me-3 mb-3 ">
+                            <a href="#" class="pe-auto text-dark text-decoration-none fs-6 opacity-75">Careers</a>
+                        </li>
+                        <li class="list-inline-item me-3 mb-3 ">
+                            <a href="#" class="pe-auto text-dark text-decoration-none fs-6 opacity-75">Privacy</a>
+                        </li>
+                        <br>
+                        <li class="list-inline-item me-3 mb-3 ">
+                            <a href="#" class="pe-auto text-dark text-decoration-none fs-6 opacity-75">Terms</a>
+                        </li>
+                        <li class="list-inline-item me-3 mb-3 ">
+                            <a href="#" class="pe-auto text-dark text-decoration-none fs-6 opacity-75">About</a>
+                        </li>
+                        <li class="list-inline-item me-3 mb-3">
+                            <a href="#" class="pe-auto text-dark text-decoration-none fs-6 opacity-75">Text to speech</a>
+                        </li>
+                      </ul>
+                </div>
+                
+                
             </div>
         </div>
     </div>

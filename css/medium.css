@@ -1,3 +1,45 @@
 .border-bottom-dark{
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
+}
+.fs-14{
+    font-size: 14px;
+    
+}
+/* 8-4 kısımdaki büyük başlık için */
+.fw-and-ff{
+    font-weight: 1000;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+
+.ff{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 14px;
+    font-style: italic;
+    
+} 
+.btn-secondary-special{
+    background-color: #f2f2f2;
+    font-size: 10px;
+    color: black;
+    border: none;
+    
+}
+.btn-secondary-special:hover{
+    background-color: #e6e6e6;
+    color: black;
+}
+/* discover more of what matters to you */
+.btn-light{
+        margin-bottom: 10px;
+        font-size: 13px;
+
+}
+.color{
+    background-color: #ffc107;
+    transition: 0.5s;
+}
+.get-started{
+    background-color: rgb(29, 28, 28);
+    transition: 0.5s;
 }
